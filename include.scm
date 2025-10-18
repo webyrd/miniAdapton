@@ -5,7 +5,7 @@
     (lambda (x)
       (define read-file
         (lambda (fn k)
-          (let ([p (open-file-input-port fn)])
+          (let ([p (open-input-file fn)])
             (let f ([x (get-datum p)])
               (if (eof-object? x)
                   (begin (close-port p) '())
