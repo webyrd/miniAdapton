@@ -92,7 +92,7 @@
   (max-tree some-tree)
   4)
 
-(test ""
+(test "max-tree-path some-tree (right right)"
   (max-tree-path some-tree)
   '(right right))
 
